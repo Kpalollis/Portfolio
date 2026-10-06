@@ -3,55 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <meta name="description" content="Το portfolio του Κωνσταντίνου Παλόλλη, junior front-end developer με ενδιαφέρον για το responsive web και το React.">
+    <meta name="theme-color" content="#f3f1e9">
+    <title>Κωνσταντίνος Παλόλλης — Junior Front-End Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <h1>Hello! I am Konstantinos Palollis</h1>
-        <h2>Front-End Developer</h2>
-        <p>I build responsive websites and React applications.</p>
+    <header class="site-header">
+        <a class="wordmark" href="#home" aria-label="Κωνσταντίνος Παλόλλης, αρχική">KP<span>.</span></a>
+        <nav aria-label="Κύρια πλοήγηση">
+            <a href="#about">Σχετικά</a>
+            <a href="#projects">Projects</a>
+            <a class="nav-contact" href="#contact">Επικοινωνία <span aria-hidden="true">↗</span></a>
+        </nav>
     </header>
 
-    <!-- About Me Section -->
-    <section class="about">
-        <h2>About Me</h2>
-        <p>Entry-Level Front-End Developer proficient in HTML, CSS, JavaScript,
-            and UI/UX principles. Hands-on trained with React and responsive
-            design techniques. Eager to learn and grow in a fast-paced
-            development environment.</p>
-    </section>
+    <main>
+        <section class="hero" id="home" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="status-dot"></span> JUNIOR FRONT-END DEVELOPER</p>
+                <h1 id="hero-title">Κωνσταντίνος<br><span>Παλόλλης</span></h1>
+                <p class="hero-intro">Δίνω ζωή σε ιδέες μέσα από το web, με προσοχή στη λεπτομέρεια και διάθεση να μαθαίνω σε κάθε project.</p>
+                <div class="hero-actions">
+                    <a class="button button-dark" href="#projects">Δες τα projects <span aria-hidden="true">↓</span></a>
+                    <a class="text-link" href="mailto:kpalollis@gmail.com">Ας μιλήσουμε <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+            <div class="hero-art" aria-label="Οπτική σύνθεση με κώδικα και το web">
+                <div class="art-note">DESIGN<br>MEETS CODE</div>
+                <div class="browser-window">
+                    <div class="browser-bar"><span></span><span></span><span></span><i>my-next-project.dev</i></div>
+                    <div class="browser-content">
+                        <div class="browser-copy">
+                            <span class="browser-kicker">A LITTLE BIT OF CODE</span>
+                            <strong>Big ideas,<br>built for the web.</strong>
+                            <span class="browser-cta">EXPLORE <b>↗</b></span>
+                        </div>
+                        <div class="browser-shape" aria-hidden="true"><span>&lt;/&gt;</span></div>
+                    </div>
+                </div>
+                <span class="art-caption">CURIOUS BY NATURE · BUILDING EVERY DAY</span>
+                <span class="art-spark" aria-hidden="true">✳</span>
+            </div>
+            <a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a>
+        </section>
 
-    <!-- Projects Section -->
-    <section class="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Restaurant Homepage</h3>
-            <p>Responsive site for Restaurant.</p>
-            <a href=" https://kpalollis.github.io/demo-restaurant-page/" target="_blank">Live Demo</a> |
-            <a href="https://github.com/Kpalollis" target="_blank">GitHub</a>
-        </div>
-        <div class="project">
-            <h3>React Calculator</h3>
-            <p> Calculator with React.</p>
-            <a href="#" target="_blank">Live Demo</a> |
-            <a href="https://github.com/Kpalollis" target="_blank">GitHub</a>
-        </div>
-        
-    </section>
+        <section class="about section-wrap" id="about" aria-labelledby="about-title">
+            <div class="section-label"><span>01</span> ΛΙΓΑ ΛΟΓΙΑ ΓΙΑ ΜΕΝΑ</div>
+            <div class="about-content">
+                <h2 id="about-title">Καλός κώδικας.<br><span>Ακόμα καλύτερη</span><br>περιέργεια.</h2>
+                <div class="about-details">
+                    <p>Είμαι entry-level front-end developer και μου αρέσει να μετατρέπω ιδέες σε προσεγμένες, responsive εμπειρίες για το web.</p>
+                    <p>Δουλεύω με HTML, CSS και JavaScript, ενώ εξελίσσομαι στο React και στις αρχές του UI/UX. Αναζητώ την πρώτη μου ευκαιρία σε μια ομάδα όπου μπορώ να συνεισφέρω, να συνεργαστώ και να γίνομαι καλύτερος.</p>
+                    <div class="skills" aria-label="Τεχνολογίες">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Responsive design</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Contact Section -->
-    <section class="contact">
-        <h2>Επικοινωνία</h2>
-        <p>Email: <a href="kpalollis@gmail.com">kpalollis@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/Kpalollis" target="_blank">kpalollis</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/%CE%BA%CF%89%CE%BD%CF%83%CF%84%CE%B1%CE%BD%CF%84%CE%AF%CE%BD%CE%BF%CF%82-%CF%80%CE%B1%CE%BB%CF%8C%CE%BB%CE%BB%CE%B7%CF%82-b34396334/" target="_blank">Κωνσταντίνος Παλόλλης</a></p>
-    </section>
+        <section class="projects section-wrap" id="projects" aria-labelledby="projects-title">
+            <div class="section-label"><span>02</span> ΕΠΙΛΕΓΜΕΝΗ ΔΟΥΛΕΙΑ</div>
+            <div class="projects-heading">
+                <h2 id="projects-title">Μικρά βήματα,<br><span>χειροπιαστά projects.</span></h2>
+                <p>Μαθαίνω φτιάχνοντας. Να μερικά projects στα οποία δοκίμασα νέες ιδέες και τεχνολογίες.</p>
+            </div>
+            <div class="project-grid">
+                <article class="project project-restaurant">
+                    <a class="project-visual restaurant-visual" href="https://kpalollis.github.io/demo-restaurant-page/" target="_blank" rel="noopener noreferrer" aria-label="Άνοιγμα live demo του Restaurant Homepage">
+                        <div class="restaurant-top"><span>LA TAVOLA</span><span>MENU&nbsp;&nbsp; ABOUT&nbsp;&nbsp; BOOK A TABLE</span></div>
+                        <div class="restaurant-body"><span>GOOD FOOD.<br>GOOD COMPANY.</span><i aria-hidden="true">✳</i></div>
+                        <div class="restaurant-bottom"><span>MADE WITH CARE</span><span>SCROLL TO DISCOVER ↓</span></div>
+                        <span class="visual-index">01 / 02</span>
+                    </a>
+                    <div class="project-info">
+                        <div><p class="project-type">WEB DESIGN · RESPONSIVE</p><h3>Restaurant Homepage</h3><p>Μια responsive αρχική σελίδα για εστιατόριο, με καθαρή δομή και έμφαση στην παρουσίαση του χώρου.</p></div>
+                        <a class="project-link" href="https://kpalollis.github.io/demo-restaurant-page/" target="_blank" rel="noopener noreferrer" aria-label="Live demo του Restaurant Homepage">↗</a>
+                    </div>
+                </article>
+                <article class="project project-calculator">
+                    <div class="project-visual calculator-visual" aria-label="Προεπισκόπηση αριθμομηχανής React">
+                        <div class="calculator">
+                            <div class="calculator-display"><span>YOUR TOTAL</span><strong>2,048<span>.00</span></strong></div>
+                            <div class="calculator-keys"><span>AC</span><span>±</span><span>%</span><span class="key-operator">÷</span><span>7</span><span>8</span><span>9</span><span class="key-operator">×</span><span>4</span><span>5</span><span>6</span><span class="key-operator">−</span><span>1</span><span>2</span><span>3</span><span class="key-operator">+</span><span class="key-zero">0</span><span>.</span><span class="key-equals">=</span></div>
+                        </div>
+                        <span class="visual-index">02 / 02</span>
+                    </div>
+                    <div class="project-info">
+                        <div><p class="project-type">REACT · JAVASCRIPT</p><h3>React Calculator</h3><p>Μια απλή αριθμομηχανή σε React, για εξάσκηση στη διαχείριση κατάστασης και στη διαδραστικότητα.</p></div>
+                        <a class="project-link" href="https://github.com/Kpalollis" target="_blank" rel="noopener noreferrer" aria-label="Περισσότερα projects στο GitHub">↗</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact" id="contact" aria-labelledby="contact-title">
+            <div class="contact-inner">
+                <div class="section-label"><span>03</span> ΕΠΙΚΟΙΝΩΝΙΑ</div>
+                <h2 id="contact-title">Έχεις κάτι<br>στο μυαλό σου<span>;</span></h2>
+                <a class="contact-email" href="mailto:kpalollis@gmail.com">kpalollis@gmail.com <span aria-hidden="true">↗</span></a>
+                <div class="contact-socials">
+                    <a href="https://github.com/Kpalollis" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+                    <a href="https://www.linkedin.com/in/%CE%BA%CF%89%CE%BD%CF%83%CF%84%CE%B1%CE%BD%CF%84%CE%AF%CE%BD%CE%BF%CF%82-%CF%80%CE%B1%CE%BB%CF%8C%CE%BB%CE%BB%CE%B7%CF%82-b34396334/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>©Konstantinos Palollis 2025</p>
+        <a class="wordmark" href="#home" aria-label="Επιστροφή στην αρχή">KP<span>.</span></a>
+        <p>Σχεδιάστηκε και αναπτύχθηκε από τον Κωνσταντίνο Παλόλλη · 2026</p>
+        <a href="#home">ΠΙΣΩ ΣΤΗΝ ΑΡΧΗ ↑</a>
     </footer>
 
 </body>
