@@ -1,1 +1,1 @@
-Portofolio: https://kpalollis.github.io/Portfolio/
+Portofolio link: https://kpalollis.github.io/Portfolio/
